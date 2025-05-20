@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "a43a4169-e68e-4dfd-89e3-44eb9cbc65b9",
+		"name": "CAESAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45118396",
+		"_collection_link": "https://conheo.postman.co/workspace/TrongHieu_941~cbe687fd-cb32-4117-bde2-f7952143ae2f/collection/45118396-a43a4169-e68e-4dfd-89e3-44eb9cbc65b9?action=share&source=collection_link&creator=45118396"
+	},
+	"item": [
+		{
+			"name": "MaHoa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"plain_text\": \"HUTECH\",\r\n  \"key\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/caesar/encrypt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caesar",
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiaiMa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cipher_text\": \"KXWHFK\",\r\n  \"key\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/caesar/decrypt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"caesar",
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
